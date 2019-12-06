@@ -25,7 +25,6 @@ fn PendSV() {
     unsafe {
         let a: &str = &A;
         uwrite!(&mut W, "{}", a).unwrap();
-        // TODO
-        // uwrite!(&mut W, "{:?}", a).unwrap();
+        uwrite!(&mut W, "{:?}", a).unwrap();
     }
 }

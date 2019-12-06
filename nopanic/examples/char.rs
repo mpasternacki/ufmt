@@ -20,6 +20,5 @@ fn main() -> ! {
 fn PendSV() {
     let a = A.load(Ordering::Relaxed) as char;
     uwrite!(&mut W, "{}", a).unwrap();
-    // TODO
-    // uwrite!(&mut W, "{:?}", a).unwrap();
+    uwrite!(&mut W, "{:?}", a).unwrap();
 }
